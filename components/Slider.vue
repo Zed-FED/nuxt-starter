@@ -28,18 +28,6 @@ export default {
         title: 'Slide <b style="font-size: 1.3em;color: purple">#3</b>',
         content: 'Slide content 3.',
         image: 'banner-3.jpg'
-      },
-      {
-        id: 4,
-        title: 'Slide <b style="font-size: 1.3em;color: green">#4</b>',
-        content: 'Slide content 4.',
-        image: 'banner-4.jpg'
-      },
-      {
-        id: 5,
-        title: 'Slide <b style="font-size: 1.3em;color: blue">#5</b>',
-        content: 'Slide content 5.',
-        image: 'banner-5.jpg'
       }
     ]
   })
