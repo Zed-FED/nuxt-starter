@@ -1,7 +1,7 @@
 <script>
 import NoSSR from 'vue-no-ssr'
 import { VueperSlides, VueperSlide } from 'vueperslides'
-import '~/node_modules/vueperslides/dist/vueperslides.min.css'
+import '~/node_modules/vueperslides/dist/vueperslides.css'
 
 export default {
     components: {

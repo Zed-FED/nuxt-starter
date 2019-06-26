@@ -30,16 +30,16 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <div class="row py-5">
-            <div class=" col-lg-4" v-for="(items, index) in columns" :key="index">
+    <b-container>
+        <b-row>
+            <b-col cols="12" md="4" class="py-5" v-for="(items, index) in columns" :key="index">
                 <img :src="`images/${items.image}`" alt=""/>
                 <h5 class="my-3">{{ items.columnHeading }}</h5>
                 <p>{{ items.columnDesc }}</p>
-            </div>
-        </div>
+            </b-col>
+        </b-row>
         <Btn to="/about">I'm a Button</Btn>
-    </div>
+    </b-container>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

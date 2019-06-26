@@ -10,17 +10,21 @@
           voluptatibus, quasi incidunt atque maiores aperiam dolorem obcaecati? Consequuntur quos exercitationem enim rem 
           cupiditate expedita repudiandae!</p>
       </div>
+
+      <Footer />
     </div>
 </template>
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
 import Header from '~/components/Header.vue'
+import Footer from '~/components/Footer.vue'
 
 export default {
   components: {
     AppLogo,
-    Header
+    Header,
+    Footer
   },
   data () {
     return {

@@ -9,9 +9,10 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sequi corporis omnis, minima perspiciatis 
           corrupti. Ducimus, architecto quasi illo dolor velit perspiciatis consectetur eaque perferendis dicta repudiandae 
           ut optio impedit!</p>
-          <Select />
           <Form />
       </div>
+
+      <Footer />
     </div>
 </template>
 
@@ -23,14 +24,15 @@ Vue.use(VeeValidate);
 
 import AppLogo from '~/components/AppLogo.vue'
 import Header from '~/components/Header.vue'
-import Select from '~/components/Select'
+import Footer from '~/components/Footer.vue'
 import Form from '~/components/Form'
 
 export default {
   components: {
     AppLogo,
     Header,
-    Form
+    Form,
+    Footer
   },
   data () {
     return {
