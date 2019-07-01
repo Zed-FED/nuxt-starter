@@ -1,8 +1,10 @@
 <script>
 import Btn from '~/components/Button/Button.vue'
+import Heading from '~/components/Heading.vue'
 export default {
     components: {
-      Btn
+      Btn,
+      Heading
     },
     data: () => ({
     columns: [
@@ -31,8 +33,9 @@ export default {
 
 <template>
     <b-container>
-        <b-row>
-            <b-col cols="12" md="4" class="py-5" v-for="(items, index) in columns" :key="index">
+      <Heading :level="1">test</Heading>
+        <b-row class="py-5">
+            <b-col cols="12" md="4" v-for="(items, index) in columns" :key="index">
                 <img :src="`images/${items.image}`" alt=""/>
                 <h5 class="my-3">{{ items.columnHeading }}</h5>
                 <p>{{ items.columnDesc }}</p>

@@ -1,19 +1,27 @@
 <template>
   <section class="">
-    <div>
-      <!-- <app-logo/> -->
-      <Header />
-    </div>
+    
+    <Header />
+     
+    <no-ssr>
+      <Hero />
+    </no-ssr>
 
     <!-- Slider -->
-    <no-ssr>
+    <!-- <client-only>
       <Slider />
-    </no-ssr>
+    </client-only> -->
     <!-- Slider -->
+
+    <HomeAbout />
 
     <!-- Columns -->
     <Columns />
     <!-- Columns Ends -->
+
+    <no-ssr>
+      <Testimonials />
+    </no-ssr>
 
     <Footer />
 
@@ -24,17 +32,23 @@
 <script>
   import AppLogo from '~/components/AppLogo.vue'
   import Header from '~/components/Header.vue'
+  import Hero from '~/components/Hero.vue'
   import Footer from '~/components/Footer.vue'
-  import Slider from '~/components/Slider.vue'
+  // import Slider from '~/components/Slider.vue'
   import Columns from '~/components/Columns.vue'
+  import HomeAbout from '~/components/HomeAbout.vue'
+  import Testimonials from '~/components/HomeTestimonial.vue'
   
   export default {
     components: {
       AppLogo,
       Header,
+      Hero,
       Footer,
-      Slider,
-      Columns
+      // Slider,
+      Columns,
+      HomeAbout,
+      Testimonials
     },
     data () {
       return {

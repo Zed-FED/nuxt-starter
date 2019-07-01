@@ -5869,6 +5869,10 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
+slick-carousel@^1.6.0:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/slick-carousel/-/slick-carousel-1.8.1.tgz#a4bfb29014887bb66ce528b90bd0cda262cc8f8d"
+
 snapdragon-node@^2.0.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/snapdragon-node/-/snapdragon-node-2.1.1.tgz#6c175f86ff14bdb0724563e8f3c1b021a286853b"
@@ -6674,6 +6678,10 @@ vue-no-ssr@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/vue-no-ssr/-/vue-no-ssr-1.1.1.tgz#875f3be6fb0ae41568a837f3ac1a80eaa137b998"
 
+vue-parallaxy@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/vue-parallaxy/-/vue-parallaxy-1.1.1.tgz#2f6037f7bffa4b4ca71759924090eca581f5f459"
+
 vue-router@^3.0.6:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.6.tgz#2e4f0f9cbb0b96d0205ab2690cfe588935136ac3"
@@ -6690,6 +6698,12 @@ vue-server-renderer@^2.6.10:
     resolve "^1.2.0"
     serialize-javascript "^1.3.0"
     source-map "0.5.6"
+
+vue-slick@^1.1.15:
+  version "1.1.15"
+  resolved "https://registry.yarnpkg.com/vue-slick/-/vue-slick-1.1.15.tgz#2916134531fd1f9638548f2ba1526e4f11032588"
+  dependencies:
+    slick-carousel "^1.6.0"
 
 vue-style-loader@^4.1.0:
   version "4.1.2"
@@ -6713,9 +6727,9 @@ vue@^2.6.10:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
 
-vueperslides@^1.12.0:
-  version "1.19.0"
-  resolved "https://registry.yarnpkg.com/vueperslides/-/vueperslides-1.19.0.tgz#0dc75593a7b8bca025f9433f0e406fcf5a21090a"
+vueperslides@^1.19.1:
+  version "1.19.1"
+  resolved "https://registry.yarnpkg.com/vueperslides/-/vueperslides-1.19.1.tgz#3b3f21d0f1f37116f66f3f2885ce4c977917a8bd"
 
 vuex@^3.1.1:
   version "3.1.1"

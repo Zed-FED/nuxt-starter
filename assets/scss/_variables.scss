@@ -1,0 +1,29 @@
+$primary-color: #e1b12c;
+$secondary-color: #020815;
+$white: #fff;
+$bg-light: #f2f4f8;
+$color-blue: #182C61;
+
+$color-text: #717273;
+$color-text-dark :#12131b;
+
+$color-heading: $color-blue;
+
+$btn-bg: $primary-color;
+
+
+// Font size
+
+$base-font-size: 16px;
+$font-size-large: 24px;
+$font-size-x-large: 32px;
+$font-size-xx-large: 42px;
+$font-size-xxx-large: 72px;
+
+
+// Override Bootstrap Variables
+// $border-radius: 0 !default;
+
+// Include Bootstrap and BootstrapVue SCSS files
+// @import '~bootstrap/scss/bootstrap.scss';
+// @import '~bootstrap-vue/src/index.scss';

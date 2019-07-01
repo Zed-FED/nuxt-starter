@@ -31,32 +31,51 @@ export default {
 </script>
 
 <template>
-<div>
+
     <header class="py-3">
-        <div class="container">
-            <div class="row">
+        <b-container>
+            <b-row class="align-items-center">
                 <!-- Logo Container -->
-                <div class="logo col-sm-4">
-                    <app-logo/>
-                </div>
+                <b-col cols="12" sm="4" class="logo">
+                  <app-logo/>
+                </b-col>
                 <!-- Logo Container Ends -->
 
                 <!-- Navigation -->
-                <div class="col-sm-8">
-                    <ul class="nav justify-content-center">
+                <b-col cols="12" sm="8">
+                    <!-- <ul class="nav justify-content-end">
                         <li v-for="(items, index) in menu" :key="index" class="nav-item">
                             <nuxt-link v-bind:to="items.menuLink" class="nav-link">{{ items.menuItem }}</nuxt-link>
                         </li>
-                    </ul>
-                </div>
+                    </ul> -->
+                  <b-nav class="justify-content-end site-nav">
+                    <b-nav-item v-for="(items, index) in menu" :key="index" v-bind:to="items.menuLink">
+                      {{ items.menuItem }}
+                    </b-nav-item>
+                  </b-nav>
+                </b-col>
                 <!-- Navigation Ends -->
-            </div>
-        </div>
+            </b-row>
+        </b-container>
     </header>
-</div>
+
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
+  header {
+    background-color: $secondary-color;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    a {
+      transition: 0.5 ease-in-out;
+      color: $white;
+      &:hover, &.nuxt-link-exact-active {
+        color: $primary-color;
+      }
+    }
+  }
 </style>

@@ -1,0 +1,17 @@
+.heading {
+	color: $color-heading;
+	line-height: 1.6;
+	font-size: $font-size-large;
+
+	&--small {
+		font-size: $base-font-size
+	}
+	
+	&--medium {
+		font-size: $font-size-x-large
+	}
+
+	&--large {
+		font-size: $font-size-xx-large
+	}
+}
