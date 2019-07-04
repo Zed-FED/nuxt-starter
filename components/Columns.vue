@@ -33,7 +33,6 @@ export default {
 
 <template>
     <b-container>
-      <Heading :level="1">test</Heading>
         <b-row class="py-5">
             <b-col cols="12" md="4" v-for="(items, index) in columns" :key="index">
                 <img :src="`images/${items.image}`" alt=""/>
@@ -41,7 +40,7 @@ export default {
                 <p>{{ items.columnDesc }}</p>
             </b-col>
         </b-row>
-        <Btn to="/about">I'm a Button</Btn>
+        <!-- <Btn to="/about">I'm a Button</Btn> -->
     </b-container>
 </template>
 

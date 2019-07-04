@@ -16,19 +16,19 @@ export default {
     slides: [
       {
         id: 1,
-        title: 'Slide <b style="font-size: 1.3em;color: yellow">John Doe</b>',
+        title: 'Peter Paul',
         content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
         clientImage : 'img-testimonial.png'
       },
       {
         id: 2,
-        title: 'Slide <b style="font-size: 1.3em;color: red">Peter Parker</b>',
+        title: 'John Doe',
         content: 'Iure, amet unde? Quasi, ratione voluptas quae dolor ipsum blanditiis possimus quo',
         clientImage : 'img-testimonial.png'
       },
       {
         id: 3,
-        title: 'Slide <b style="font-size: 1.3em;color: purple">Jenny Doe</b>',
+        title: 'Jenny Doe',
         content: 'illo provident quia incidunt esse perspiciatis vero odio magnam aspernatur.',
         clientImage : 'img-testimonial.png'
       }
@@ -42,9 +42,20 @@ export default {
 <div id="testimonials" class="testimonials">
   <b-container>
     <Heading :level="3" class="text-center">Testimonials</Heading>
-    <vueper-slides autoplay :bullets="false" class="no-shadow">
-      <vueper-slide v-for="items in slides" :key="items.id" :title="items.title" :content="items.content">
-        <img :src="`images/${items.clientImage}`" alt=""/>
+    <vueper-slides :autoplay="false" :bullets="false" class="no-shadow">
+      <vueper-slide v-for="items in slides" :key="items.id">
+        <!-- <img :src="`images/${items.clientImage}`" alt=""/> -->
+        <div slot="slideContent">
+          <div slot="clientImg">
+            <img :src="`images/${items.clientImage}`" alt="" class="client-img" />
+          </div>
+          <div slot="slideTitle">
+            {{ items.title }}
+          </div>
+          <div slot="slideText">
+            {{ items.content }}
+          </div>
+        </div>
       </vueper-slide>
     </vueper-slides>
   </b-container>
@@ -52,5 +63,8 @@ export default {
 </template>
 
 <style scoped lang="scss">
-  
+  .client-img {
+    max-width: 100px;
+    border-radius: 100%; 
+  }
 </style>

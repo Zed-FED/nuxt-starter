@@ -6,7 +6,7 @@
   <div class="hero-text text-center">
     <Heading :level="3">Hey, I'm Zed</Heading>
     <Heading :level="2">Web Dev</Heading>
-    <Heading :level="4">I am a senior Web Developer of Classy Theme. 
+    <Heading :level="4">I am a senior Web Developer and a Music Lover. 
 I love to code, travel, music &amp; foods.</Heading>
   </div>
 </div>
