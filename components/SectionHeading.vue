@@ -11,7 +11,7 @@ import Heading from '~/components/Heading.vue'
 
 <template>
   <b-container class="text-center">
-      <span><img src="~/assets/images/Icon.svg" alt="" /></span>
+      <span><img src="~/assets/images/icon.svg" alt="" /></span>
       <Heading :level="3">{{ heading }}</Heading>
       <p>{{ content }}</p>
   </b-container>
