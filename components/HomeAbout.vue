@@ -29,7 +29,7 @@ import SectionHeading from '~/components/SectionHeading'
 
 <template>
   <section class="my-5">
-    <SectionHeading heading="About Me 123" content="I have more than 7 years of experience in web design and development.
+    <SectionHeading heading="About Me" content="I have more than 7 years of experience in web design and development.
    I love Music, Delicious food, Travel and Coding."/>
 
   <b-container class="homeabout">
