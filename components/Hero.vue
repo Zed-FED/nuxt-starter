@@ -1,7 +1,7 @@
 <template>
 <div class="position-relative">
   <parallax>
-    <img src="~/assets/images/man.jpg" alt="Zed-FED" />
+    <img src="~/assets/images/hero-bg.jpg" alt="Zed-FED" />
   </parallax>
   <div class="hero-text text-center">
     <Heading :level="3">Hey, I'm Zed</Heading>
@@ -27,7 +27,7 @@ I love to code, travel, music &amp; foods.</Heading>
 .Masthead {
   &:after {
     content: "";
-    background: rgba($color-blue, 0.5);
+    background: rgba($black, 0.5);
     position: absolute;
     left: 0;
     right: 0;

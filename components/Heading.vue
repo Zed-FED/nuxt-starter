@@ -31,3 +31,18 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+h1 {
+
+}
+h2 {
+
+}
+h3 {
+  font-size: $font-size-large;
+}
+h4 {
+  font-size: $base-font-size;
+}
+</style>

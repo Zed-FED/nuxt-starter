@@ -64,15 +64,16 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   header {
-    background-color: $secondary-color;
+    background-color: $white;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 3;
+    box-shadow: 0px 0px 20px 10px rgba($black, 0.15);
     a {
       transition: 0.5 ease-in-out;
-      color: $white;
+      color: $color-text;
       &:hover, &.nuxt-link-exact-active {
         color: $primary-color;
       }

@@ -1,10 +1,12 @@
 <script>
 import Btn from '~/components/Button/Button.vue'
 import Heading from '~/components/Heading.vue'
+import SectionHeading from '~/components/SectionHeading'
 export default {
     components: {
       Btn,
-      Heading
+      Heading,
+      SectionHeading
     },
     data: () => ({
     columns: [
@@ -32,6 +34,10 @@ export default {
 </script>
 
 <template>
+    <section>
+      <SectionHeading heading="About Me" content="I have more than 7 years of experience in web design and development.
+   I love Music, Delicious food, Travel and Coding."/>
+
     <b-container>
         <b-row class="py-5">
             <b-col cols="12" md="4" v-for="(items, index) in columns" :key="index">
@@ -42,6 +48,7 @@ export default {
         </b-row>
         <!-- <Btn to="/about">I'm a Button</Btn> -->
     </b-container>
+    </section>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

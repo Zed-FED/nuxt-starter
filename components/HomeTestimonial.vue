@@ -4,12 +4,14 @@ import { VueperSlides, VueperSlide } from 'vueperslides'
 import '~/node_modules/vueperslides/dist/vueperslides.css'
 
 import Heading from '~/components/Heading.vue'
+import SectionHeading from '~/components/SectionHeading'
 
 export default {
     components: {
       Heading,
-      VueperSlides, 
+      VueperSlides,
       VueperSlide,
+      SectionHeading,
       'no-ssr': NoSSR
     },
     data: () => ({
@@ -40,18 +42,18 @@ export default {
 
 <template>
 <div id="testimonials" class="testimonials">
+  <SectionHeading heading="Testimonials" content="This component is for viewing purpose"/>
   <b-container>
-    <Heading :level="3" class="text-center">Testimonials</Heading>
     <vueper-slides :autoplay="false" :bullets="false" class="no-shadow">
       <vueper-slide v-for="items in slides" :key="items.id">
         <!-- <img :src="`images/${items.clientImage}`" alt=""/> -->
         <div slot="slideContent">
-          <div slot="clientImg">
+          <div slot="clientImg" class="mb-2">
             <img :src="`images/${items.clientImage}`" alt="" class="client-img" />
           </div>
-          <div slot="slideTitle">
+          <Heading :level="4" slot="slideTitle">
             {{ items.title }}
-          </div>
+          </Heading>
           <div slot="slideText">
             {{ items.content }}
           </div>
@@ -65,6 +67,6 @@ export default {
 <style scoped lang="scss">
   .client-img {
     max-width: 100px;
-    border-radius: 100%; 
+    border-radius: 100%;
   }
 </style>
