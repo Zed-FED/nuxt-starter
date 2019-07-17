@@ -6,7 +6,7 @@
   <div class="hero-text text-center">
     <Heading :level="3">Hey, I'm Zed</Heading>
     <Heading :level="2">Web Dev</Heading>
-    <Heading :level="4">I am a senior Web Developer and a Music Lover. 
+    <Heading :level="3">I am a senior Web Developer and a Music Lover. 
 I love to code, travel, music &amp; foods.</Heading>
   </div>
 </div>
@@ -45,25 +45,31 @@ I love to code, travel, music &amp; foods.</Heading>
   color: $white;
   max-width: 510px;
   margin: auto;
+  @media screen and (max-width: 767px) {
+    top: 30%;
+  }
    h1, h2, h3, h4, h5, h6, p {
      color: $white;
    }
    h2 {
      position: relative;
      font-size: $font-size-xxx-large;
-     &:before, &:after {
-       content: "";
-       position: absolute;
-       width: 100px;
-       height: 10px;
-       background-color: $white;
-       top: 50%;
-     }
-     &:before {
-       left: 0;
-     }
-     &:after {
-       right: 0;
+     @media screen and (min-width: 767px) {
+       font-size: $font-size-xx-large;
+       &:before, &:after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 10px;
+        background-color: $white;
+        top: 50%;
+      }
+      &:before {
+        left: 0;
+      }
+      &:after {
+        right: 0;
+      }
      }
    }
 }

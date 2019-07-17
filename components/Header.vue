@@ -1,6 +1,8 @@
 <script>
 import AppLogo from '~/components/AppLogo.vue'
 
+
+
 export default {
     components: {
         AppLogo
@@ -32,30 +34,21 @@ export default {
 
 <template>
 
-    <header class="py-3">
+    <header>
         <b-container>
-            <b-row class="align-items-center">
-                <!-- Logo Container -->
-                <b-col cols="12" sm="4" class="logo">
-                  <app-logo/>
-                </b-col>
-                <!-- Logo Container Ends -->
-
-                <!-- Navigation -->
-                <b-col cols="12" sm="8">
-                    <!-- <ul class="nav justify-content-end">
-                        <li v-for="(items, index) in menu" :key="index" class="nav-item">
-                            <nuxt-link v-bind:to="items.menuLink" class="nav-link">{{ items.menuItem }}</nuxt-link>
-                        </li>
-                    </ul> -->
-                  <b-nav class="justify-content-end site-nav">
-                    <b-nav-item v-for="(items, index) in menu" :key="index" v-bind:to="items.menuLink">
-                      {{ items.menuItem }}
-                    </b-nav-item>
-                  </b-nav>
-                </b-col>
-                <!-- Navigation Ends -->
-            </b-row>
+          <!-- Logo Container -->
+          <b-navbar toggleable="lg" type="light"  variant="light" class="justify-content-between">
+            <b-navbar-brand><app-logo/></b-navbar-brand>
+              <!-- Navigation -->
+              <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+              <b-collapse id="nav-collapse" class="justify-content-end site-nav" is-nav>
+                <b-navbar-nav>
+                  <b-nav-item v-for="(items, index) in menu" :key="index" v-bind:to="items.menuLink">
+                {{ items.menuItem }}
+              </b-nav-item>
+                </b-navbar-nav>
+              </b-collapse>
+            </b-navbar>
         </b-container>
     </header>
 
@@ -71,11 +64,25 @@ export default {
     left: 0;
     z-index: 3;
     box-shadow: 0px 0px 20px 10px rgba($black, 0.15);
-    a {
+    .nav-item:not(:last-child) {
+        a {
+          padding-right: 20px;
+        }
+      }
+    a, .navbar-light .navbar-nav .nav-link {
       transition: 0.5 ease-in-out;
       color: $color-text;
+      padding-left: 20px;
       &:hover, &.nuxt-link-exact-active {
         color: $primary-color;
+      }
+    }
+    .navbar {
+      padding-left: 0;
+      padding-right: 0;
+
+      &.bg-light {
+        background-color: transparent !important;
       }
     }
   }

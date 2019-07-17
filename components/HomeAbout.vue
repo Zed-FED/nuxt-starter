@@ -93,6 +93,10 @@ import SectionHeading from '~/components/SectionHeading'
       width: auto;
       margin: 0 auto;
       display: block;
+
+      @media screen and (max-width: 767px) {
+        height: 380px;
+      }
     }
 }
 </style>

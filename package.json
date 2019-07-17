@@ -1,7 +1,7 @@
 {
   "name": "nuxt-starter",
   "version": "1.0.0",
-  "description": "My divine Nuxt.js project",
+  "description": "My Awesome Portfolio Theme Built with Nuxt.js",
   "author": "Zed",
   "private": true,
   "scripts": {
@@ -20,9 +20,10 @@
     "nuxt": "^2.0.0",
     "sass-loader": "^7.1.0",
     "vee-validate": "^2.1.0-beta.8",
+    "vue-my-photos": "^1.0.4",
     "vue-no-ssr": "^1.1.1",
     "vue-parallaxy": "^1.1.1",
-    "vue-slick": "^1.1.15",
+    "vue-simple-progress": "^1.1.0",
     "vueperslides": "^1.19.1"
   },
   "devDependencies": {

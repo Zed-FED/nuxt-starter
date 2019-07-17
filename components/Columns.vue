@@ -42,7 +42,8 @@ export default {
         <b-row class="py-5">
             <b-col cols="12" md="4" v-for="(items, index) in columns" :key="index">
                 <img :src="`images/${items.image}`" alt=""/>
-                <h5 class="my-3">{{ items.columnHeading }}</h5>
+                <!-- <h5 class="my-3">{{ items.columnHeading }}</h5> -->
+                <Heading :level="4">{{ items.columnHeading }}</Heading>
                 <p>{{ items.columnDesc }}</p>
             </b-col>
         </b-row>

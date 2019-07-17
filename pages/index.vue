@@ -12,8 +12,6 @@
       <Slider />
     </client-only> -->
     <!-- Slider -->
-    
-    <HomeContent />
 
     <HomeAbout />
 
@@ -24,6 +22,12 @@
     <!-- Skills -->
     <Skills />
     <!-- Skills -->
+
+    <GlobalParallax />
+
+    <no-ssr>
+      <HomeGallery />
+    </no-ssr>
 
     <no-ssr>
       <Testimonials />
@@ -42,6 +46,9 @@
   import HomeAbout from '~/components/HomeAbout.vue'
   import Testimonials from '~/components/HomeTestimonial.vue'
   import Skills from '~/components/Skills.vue'
+  import GlobalParallax from '~/components/GlobalParallax.vue'
+  import HomeGallery from '~/components/HomeGallery.vue'
+  import NoSSR from 'vue-no-ssr'
   
   export default {
     components: {
@@ -51,7 +58,11 @@
       HomeAbout,
       Testimonials,
       // HomeContent,
-      Skills
+      Skills,
+      GlobalParallax,
+      HomeGallery,
+      'no-ssr': NoSSR
+      
     },
     data () {
       return {
