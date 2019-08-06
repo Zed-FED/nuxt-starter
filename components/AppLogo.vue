@@ -1,5 +1,5 @@
 <template>
-  <div class="VueToNuxtLogo">
+  <div class="logo">
     <!-- <div class="Triangle Triangle--two"/>
     <div class="Triangle Triangle--one"/>
     <div class="Triangle Triangle--three"/>
@@ -8,7 +8,14 @@
   </div>
 </template>
 
-<style>
-
+<style lang="scss" scoped>
+@media screen and (max-width: 767px) {
+  .logo {
+    img {
+      max-width: 130px;
+    }
+  }
+}
 </style>
+
 

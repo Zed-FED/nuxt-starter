@@ -25,9 +25,9 @@
 
     <GlobalParallax />
 
-    <no-ssr>
+    <!-- <no-ssr>
       <HomeGallery />
-    </no-ssr>
+    </no-ssr> -->
 
     <no-ssr>
       <Testimonials />

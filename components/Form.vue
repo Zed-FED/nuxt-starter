@@ -1,6 +1,6 @@
 <template>
     <form @submit.prevent="validateBeforeSubmit" class="row">
-        <div class="form-group col-6">
+        <div class="form-group col-sm-6">
             <label class="label">Email</label>
             <p class="control has-icon has-icon-right">
                 <input class="form-control" name="email" v-model="email" v-validate="'required|email'" :class="{'input': true, 'is-danger': errors.has('email') }" type="text" placeholder="">
@@ -8,7 +8,7 @@
                 <span v-show="errors.has('email')" class="help is-danger">{{ errors.first('email') }}</span>
             </p>
         </div>
-        <div class="form-group col-6">
+        <div class="form-group col-sm-6">
             <label class="label">Name</label>
             <p class="control has-icon has-icon-right">
                 <input class="form-control" name="name" v-model="name" v-validate="'required|alpha'" :class="{'input': true, 'is-danger': errors.has('name') }" type="text" placeholder="">
@@ -16,7 +16,7 @@
                 <span v-show="errors.has('name')" class="help is-danger">{{ errors.first('name') }}</span>
             </p>
         </div>
-        <div class="form-group col-6">
+        <div class="form-group col-sm-6">
             <label class="label">Phone</label>
             <p class="control has-icon has-icon-right">
                 <input class="form-control" name="phone" v-model="phone" v-validate="'required|numeric'" :class="{'input': true, 'is-danger': errors.has('phone') }" type="text" placeholder="">
@@ -24,7 +24,7 @@
                 <span v-show="errors.has('phone')" class="help is-danger">{{ errors.first('phone') }}</span>
             </p>
         </div>
-        <div class="form-group col-6">
+        <div class="form-group col-sm-6">
             <label class="label">Website</label>
             <p class="control has-icon has-icon-right">
                 <input class="form-control" name="url" v-model="url" v-validate="'required|url'" :class="{'input': true, 'is-danger': errors.has('url') }" type="text" placeholder="">
@@ -33,7 +33,7 @@
             </p>
         </div>
 
-        <div class="form-group col-6">
+        <div class="form-group col-sm-6">
             <p class="control">
                 <button class="btn btn-primary" type="submit">Submit</button>
             </p>

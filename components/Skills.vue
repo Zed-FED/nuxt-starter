@@ -38,7 +38,7 @@ export default {
   <section class="py-5 bg-light">
     <SectionHeading heading="Skills" content="Below are the technologies i am using to build this website."/>
     <b-container>
-        <b-row class="py-5 align-items-center justify-content-center">
+        <b-row class="py-5 align-items-center justify-content-center tech-highlighter">
             <b-col cols="auto" class="text-center" v-for="(items, index) in logos" :key="index">
                 <img :src="`images/${items.image}`" class="tech-icon" alt=""/>
                 <Heading :level="4" class="my-3">{{ items.columnHeading }}</Heading>
@@ -69,7 +69,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  .tech-highlighter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
   .tech-icon {
     max-height: 60px;
+    
   }
 </style>

@@ -1,7 +1,7 @@
 <template>
 <div class="position-relative">
   <parallax>
-    <img src="~/assets/images/hero-bg.jpg" alt="Zed-FED" />
+    <img src="~/assets/images/man.jpg" alt="Zed-FED" />
   </parallax>
   <div class="hero-text text-center">
     <Heading :level="3">Hey, I'm Zed</Heading>
@@ -46,7 +46,9 @@ I love to code, travel, music &amp; foods.</Heading>
   max-width: 510px;
   margin: auto;
   @media screen and (max-width: 767px) {
-    top: 30%;
+    top: 15%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
    h1, h2, h3, h4, h5, h6, p {
      color: $white;

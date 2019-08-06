@@ -32,7 +32,7 @@ export default {
 
 <template>
 <div>
-    <footer class="py-5">
+    <footer class="py-5 site-footer">
         <div class="container">
             <div class="row align-items-center justify-content-center text-center">
                 <!-- Logo Container -->
@@ -62,5 +62,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
+.site-footer {
+  background-color: $secondary-color;
+  color: $white; 
+  .nav {
+    a {
+      color: $white;
+      &.nuxt-link-exact-active {
+        color: $primary-color;
+      }
+    }
+  }
+}
 </style>

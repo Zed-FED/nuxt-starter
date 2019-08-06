@@ -14,6 +14,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' }
     ]
   },
   /*
@@ -24,13 +27,17 @@ export default {
   ** Global CSS
   */
   css: [
-    '~assets/scss/index.scss'
+    '~assets/scss/index.scss',
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/global.js'
+    '~/plugins/global.js',
+    '~/plugins/fontawesome.js'
+    // { src: '~/plugins/after-each', mode: 'client' },
+    // { src: '~/plugins/animation', mode: 'client' }
   ],
   /*
   ** Nuxt.js modules
